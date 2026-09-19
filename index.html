@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rekomendasi Produk Unik & Hot Deals</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --primary: #22c55e; /* Warna hijau sukses/keuangan */
+      --primary-hover: #16a34a;
+      --text: #f8fafc;
+      --text-sub: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 40px;
+    }
+
+    header {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+
+    header p {
+      color: var(--text-sub);
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Slot Iklan Banner (Google AdSense / Banner Sponsor) */
+    .ad-banner {
+      background-color: var(--card-bg);
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      color: var(--text-sub);
+      font-size: 0.85rem;
+      margin-bottom: 30px;
+    }
+
+    /* Grid Produk Afiliasi */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .product-desc {
+      color: var(--text-sub);
+      font-size: 0.85rem;
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+
+    .buy-btn {
+      display: block;
+      text-align: center;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .buy-btn:hover {
+      background-color: var(--primary-hover);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-sub);
+      font-size: 0.8rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🔥 Rekomendasi Barang Unik & Promo</h1>
+    <p>Kumpulan produk pilihan terbaik dengan diskon spesial setiap hari!</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Area Iklan AdSense -->
+    <div class="ad-banner">
+      <p>---- Area Iklan / Banner Google AdSense ----</p>
+    </div>
+
+    <!-- Daftar Produk Afiliasi -->
+    <div class="product-grid">
+
+      <!-- Produk 1 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphone Bluetooth">
+        <div class="product-info">
+          <div class="product-title">Headphone Wireless Premium</div>
+          <div class="product-desc">Suara bass mantap, baterai tahan hingga 30 jam, dan nyaman digunakan seharian.</div>
+          <!-- Ganti href dengan link Shopee/Tokopedia Afiliasi milikmu -->
+          <a href="https://shopee.co.id" target="_blank" class="buy-btn">Cek Harga Promo 🛒</a>
+        </div>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Smartwatch Minimalis">
+        <div class="product-info">
+          <div class="product-title">Smartwatch Sport Minimalis</div>
+          <div class="product-desc">Fitur pelacak kesehatan lengkap, tahan air, dan desain futuristik.</div>
+          <a href="https://shopee.co.id" target="_blank" class="buy-btn">Cek Harga Promo 🛒</a>
+        </div>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500" alt="Lampu LED RGB">
+        <div class="product-info">
+          <div class="product-title">Lampu Meja LED Gaming RGB</div>
+          <div class="product-desc">Bisa diatur via aplikasi HP untuk estetika meja belajar dan kamar tidur.</div>
+          <a href="https://shopee.co.id" target="_blank" class="buy-btn">Cek Harga Promo 🛒</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Area Iklan Bawah -->
+    <div class="ad-banner" style="margin-top: 30px;">
+      <p>---- Area Iklan Google AdSense ----</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Web Rekomendasi Terpercaya. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>
